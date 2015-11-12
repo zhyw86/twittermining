@@ -5,7 +5,7 @@ train_data = genfromtxt("./data.csv", delimiter=',')
 
 print train_data
 
-forest = RandomForestClassifier(n_estimators=400)
+forest = RandomForestClassifier(n_estimators=10)
 
 forest = forest.fit(train_data[0:10000], train_data[0:10000, 59])
 
