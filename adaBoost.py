@@ -3,7 +3,7 @@ from numpy import genfromtxt
 
 train_data = genfromtxt("./data.csv", delimiter=',')
 
-boost = AdaBoostClassifier()
+boost = AdaBoostClassifier(n_estimators=10)
 
 boost = boost.fit(train_data[0:10000], train_data[0:10000, 59])
 
